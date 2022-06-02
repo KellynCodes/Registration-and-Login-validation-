@@ -46,12 +46,12 @@ while($row = mysqli_fetch_array($exe)){
 
     <div class=" bg-info alert alert-<?php echo $msgtype ?> ">YOur welcome <b><?php echo $surname." ".$lastname?> </b>
 </div>
-        <a href="logout.php" class="btn btn-info">Logout</a>
+       
 </div>
 </center>
 <?php  } ?>
 
-
+<center> <a href="logout.php" class="btn btn-info">Logout</a></center>
 
 <div class="container">
 
