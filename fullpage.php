@@ -7,6 +7,14 @@ include 'conn.php';
 
 if(!isset($_SESSION['email']) || !isset($_SESSION['password'])){
     header("location: login.php");
+}else{
+   $_SESSION['id'];
+   $_SESSION['surname'];
+   $_SESSION['lastname'];
+   $_SESSION['phone_number'];
+   $_SESSION['local_govt'];
+   $_SESSION['email'];
+   $_SESSION['password'];
 }
 ?>
 
