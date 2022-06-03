@@ -7,6 +7,8 @@ include 'conn.php';
 
 if(!isset($_SESSION['email']) || !isset($_SESSION['password'])){
     header("location: login.php");
+}else{
+    header("Location: fullpage.php");
 }
 ?>
 
@@ -29,7 +31,7 @@ if(!isset($_SESSION['email']) || !isset($_SESSION['password'])){
 $id = $_SESSION['id'];
 
 $fetch_data = "SELECT * FROM users WHERE id = '$id'";
-$exe = mysqli_query($conn,$fetch_data) or die (mysqli_error($conn));
+$exe = mysqli_query($conn,$fetch_data);
     
 while($row = mysqli_fetch_array($exe)){
     $surname = $row['surname'];
