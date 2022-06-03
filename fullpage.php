@@ -7,8 +7,6 @@ include 'conn.php';
 
 if(!isset($_SESSION['email']) || !isset($_SESSION['password'])){
     header("location: login.php");
-}else{
-    header("Location: fullpage.php");
 }
 ?>
 
